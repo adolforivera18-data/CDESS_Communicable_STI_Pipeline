@@ -1,0 +1,11 @@
+disease_name,disease_group
+CHLAMYDIA,Chlamydia
+CHLAMYDIA PID,Chlamydia
+GONOCOCCAL PID,Gonorrhea
+"GONORRHEA, UNCOMPLICATED",Gonorrhea
+MPOX,Mpox
+"SYPHILIS, CONGENITAL",Syphilis
+"SYPHILIS, EARLY, Non-Primary/Secondary",Syphilis
+"SYPHILIS, PRIMARY",Syphilis
+"SYPHILIS, SECONDARY",Syphilis
+"SYPHILIS, Unknown duration or Late",Syphilis
