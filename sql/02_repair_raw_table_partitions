@@ -1,0 +1,25 @@
+-- ============================================================
+-- Communicable STI Disease Surveillance Pipeline
+-- 02 - Repair Raw CDESS STI Table Partitions
+-- ============================================================
+--
+-- Description:
+-- Discovers and registers S3 partitions for the raw CDESS
+-- STI dataset in Amazon Athena.
+--
+-- Partitions are organized by:
+--   county_name
+--   extract_year
+--   extract_month
+--
+-- Run this query after uploading new CDESS STI data to S3.
+-- The AWS Lambda automation also executes this command
+-- during each pipeline refresh.
+--
+-- Database: communicable_sti_db_raw
+-- Region: us-east-2 (Ohio)
+--
+-- ============================================================
+
+MSCK REPAIR TABLE
+    communicable_sti_db_raw.raw_cdess_sti_opencsv;
